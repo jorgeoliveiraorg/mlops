@@ -1,5 +1,10 @@
 # macOS System Files
 .DS_Store
+.AppleDouble
+.LSOverride
+.TemporaryItems
+.Trashes
+._*
 
 # Python Bytecode and Cache
 __pycache__/
@@ -14,14 +19,17 @@ env/
 .venv/
 venv/
 
-# Jupyter Notebook Checkpoints
+# Jupyter Notebook Checkpoints & IPython Config
 .ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
 
 # Logs and Debugging Files
 logs/
 *.log
 
-# Dataset Files (adjust as needed)
+# Dataset Files (Optional, if you want to exclude raw data)
 data/
 *.csv
 
@@ -39,11 +47,30 @@ outputs/
 
 # VS Code Settings
 .vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 
-# GitHub Actions Workflows (Ignore temporary or generated files)
+# GitHub Actions Workflow Logs
 .github/workflows/*.log
 
-# Ignore Secrets and Sensitive Information
+# Ignore Secrets and Configurations
 secrets.*
 config.yaml
 config.yml
+
+# Type Checking and Linting
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# IDE-Specific Files
+.spyderproject
+.spyproject
+.ropeproject
+
+# Local History Files
+.history/
