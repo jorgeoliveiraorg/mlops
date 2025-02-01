@@ -1,0 +1,49 @@
+# macOS System Files
+.DS_Store
+
+# Python Bytecode and Cache
+__pycache__/
+*.py[cod]
+
+# Conda Environment Files
+*.conda
+env/
+*.yml
+
+# Virtual Environments
+.venv/
+venv/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Logs and Debugging Files
+logs/
+*.log
+
+# Dataset Files (adjust as needed)
+data/
+*.csv
+
+# Model and Output Files
+models/
+*.pkl
+*.h5
+*.joblib
+
+# Azure ML and Deployment Files
+azureml-logs/
+aml_config/
+outputs/
+*.azureml/
+
+# VS Code Settings
+.vscode/
+
+# GitHub Actions Workflows (Ignore temporary or generated files)
+.github/workflows/*.log
+
+# Ignore Secrets and Sensitive Information
+secrets.*
+config.yaml
+config.yml
